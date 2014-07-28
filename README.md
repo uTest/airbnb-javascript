@@ -21,6 +21,7 @@
   1. [Semicolons](#semicolons)
   1. [Type Casting & Coercion](#type-casting--coercion)
   1. [Naming Conventions](#naming-conventions)
+  1. [File Naming Conventions](#file-naming-conventions)
   1. [Accessors](#accessors)
   1. [Constructors](#constructors)
   1. [Events](#events)
@@ -1010,7 +1011,6 @@
 
 
 ## Naming Conventions
-
   - Avoid single letter names. Be descriptive with your naming.
 
     ```javascript
@@ -1120,6 +1120,34 @@
     ```
 
   - **Note:** IE8 and below exhibit some quirks with named function expressions.  See [http://kangax.github.io/nfe/](http://kangax.github.io/nfe/) for more info.
+
+**[⬆ back to top](#table-of-contents)**
+
+
+## File Naming Conventions
+  - All files should use only lowercases within their filenames.
+  - Files should use hyphens to separate words and suffixed with the following based on their function:
+    * Controller: -ctrl
+    * Model: -model
+    * Service: -svc
+    * Route: -route
+
+  - Tests should be following the above naming convention but also be suffixed with .spec
+  
+  ```javascript
+  // bad
+  userModel.js
+  user.model.js
+  user-model-spec.js
+  userprofile-svc.js
+  ```
+
+  ```javascript
+  // good
+  user-model.js
+  user-model.spec.js
+  user-profile-svc.js
+  ```
 
 **[⬆ back to top](#table-of-contents)**
 
